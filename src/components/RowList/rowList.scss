@@ -1,0 +1,48 @@
+@import "./../../theme/utils/variable.scss"; 
+
+.todolist-rowlist{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:0.06rem;
+  .show-row{ 
+    font-size: $medium-font;
+    font-family:$defaultFont; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.name{
+      width: 15%;
+     }
+     &.description{
+      width: 50%;  
+     }
+     &.status{
+      width: 15%; 
+      display: flex;
+      justify-content: center;
+     }
+     &.modification{
+      border: solid 1px;
+      width: 10%; 
+      height: 2.5rem; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; 
+      border-radius: 0.4rem;
+     }
+     &.delete{
+      border: solid 1px;
+      width: 10%; 
+      height: 2.5rem; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; 
+      border-radius: 0.4rem;
+     }
+     &.select-custom{
+       display: flex;
+       justify-content: center;
+     }
+  }
+}

@@ -1,0 +1,40 @@
+@import "./../../theme/utils/variable.scss"; 
+
+.todolist-creationrow{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: $primary;
+  padding: 1rem;
+  border: solid 0.07rem black;
+  border-radius: 0.3rem; 
+  margin-bottom: 1rem;
+  .creationrow-container{ 
+    margin-bottom: 0.5rem;
+    display: flex; 
+    .label{
+      width: 30%;
+    }
+    .input{
+      width: 30%;
+    }
+    .status{
+      width: 30%;
+    } 
+    &.button{
+      display: flex;
+      justify-content: flex-end;
+      .creationrow-send-work-list{
+        height: 2.5rem;
+        background-color: $secondary;
+        color: white;
+        border: solid 0.07rem black;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+  .creationrow-container:last-child{  
+    margin-bottom: 0rem;
+  }
+}

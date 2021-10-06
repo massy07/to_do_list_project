@@ -1,0 +1,44 @@
+@import "./../../theme/utils/variable.scss"; 
+
+.todolist-homepage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    width: 80%;
+    background-color: $primary;
+    border-radius: 1rem;
+    .homepage-logo{
+        width: 20rem;
+        margin-left: 1rem;
+    }
+    .homepage-container{
+        .homepage-title{ 
+            font-size: $large-font;
+            font-family:$defaultFont; 
+        }
+        .homepage-subtitle-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0.5rem;
+            .homepage-subtitle{ 
+                font-size: $large-font;
+                font-family:$defaultFont; 
+            }
+            .homepage-next-page-button{
+                background: url("./../../image/edit.svg" ) ;
+                height: 2.5rem;
+                width: 2.5rem;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-left: 0.8rem;
+                border-radius: 0.4rem;
+                background-color: $secondary;
+            }
+        }
+    } 
+
+}

@@ -1,0 +1,46 @@
+@import "./../../theme/utils/variable.scss"; 
+
+
+.todolist-todolistview{    
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  .todolistview-title{
+    display: flex;
+    justify-content: center; 
+    font-size: $large-font;
+    font-family:$defaultFont; 
+  }
+  .todolistview-grid{
+    width: 80%; 
+    .todolistview-grid-title{
+      display: flex;
+      margin-bottom: 0.25rem;
+      border: solid 0.0625rem; 
+      .view-title{    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        &.name{
+          width: 15%;
+         }
+         &.description{
+           width: 50%;
+         }
+         &.status{
+           width: 15%; 
+         }
+         &.modification{
+           width: 10%;
+         }
+         &.delete{
+           width: 10%;
+         }
+      } 
+    }
+  }
+}
+ 
